@@ -26,14 +26,17 @@ public class Cylinder {
 	}
 
 	public double volume() {
-		return (22/7)*radius*radius*height;
+		return Math.PI*radius*radius*height;
 	}
 	public double curvedSurfaceArea() {
-		return 2*(22/7)*radius*height;
+		
+		double res = 2*Math.PI*radius*height;
+		
+		return res;
 	}
 	
 	public double totalSurfaceArea() {
-		return 2*(22/7)*radius*(radius+height);
+		return 2*Math.PI*radius*(radius+height);
 	}
 	public double perimeter() {
 		return (4*radius)+(4*height);
